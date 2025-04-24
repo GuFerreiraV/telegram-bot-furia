@@ -104,7 +104,7 @@ async function sendMessage(message) {
         
         // Show error message
         addMessageToChat(
-            'Sorry, there was an error sending your message. Please try again later.', 
+            'Desculpe, houve um erro ao enviar sua mensagem. Por favor, tente novamente mais tarde.', 
             'bot', 
             getCurrentTimestamp()
         );
@@ -208,11 +208,11 @@ async function checkConnection() {
 function updateConnectionStatus(connected) {
     if (connected) {
         connectionStatus.className = 'badge bg-success';
-        connectionStatus.innerHTML = '<i class="fas fa-circle"></i> Connected';
+        connectionStatus.innerHTML = '<i class="fas fa-circle"></i> Conectado';
         isConnected = true;
     } else {
         connectionStatus.className = 'badge bg-danger';
-        connectionStatus.innerHTML = '<i class="fas fa-exclamation-circle"></i> Disconnected';
+        connectionStatus.innerHTML = '<i class="fas fa-exclamation-circle"></i> Desconectado';
         isConnected = false;
     }
 }

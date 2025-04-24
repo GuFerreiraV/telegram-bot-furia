@@ -32,7 +32,7 @@ def index():
         # Add welcome message
         message_history[chat_id].append({
             "sender": "bot",
-            "text": "Hello! I'm your Telegram bot assistant. How can I help you today?",
+            "text": "Olá, furioso! Eu sou o FURIA Bot. Posso te ajudar com:\n/jogadores - Elenco atual\n/jogos - Próximas partidas\n/noticias - Últimas notícias",
             "timestamp": datetime.now().strftime("%H:%M")
         })
     

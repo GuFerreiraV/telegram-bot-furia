@@ -1,3 +1,34 @@
+/* FURIA theme colors */
+:root {
+    --furia-orange: #FF5500;
+    --furia-black: #000000;
+    --furia-dark-gray: #111111;
+    --furia-light-gray: #333333;
+}
+
+/* Card header with FURIA styling */
+.furia-header {
+    background-color: var(--furia-black);
+    color: white;
+    border-bottom: 3px solid var(--furia-orange);
+}
+
+/* FURIA styled button */
+.btn-furia {
+    background-color: var(--furia-orange);
+    color: white;
+    border: none;
+}
+
+.btn-furia:hover {
+    background-color: #ff7733;
+    color: white;
+}
+
+.btn-furia:active {
+    background-color: #e64d00 !important;
+}
+
 /* Chat container */
 .chat-container {
     height: 400px;
@@ -6,6 +37,7 @@
     display: flex;
     flex-direction: column;
     gap: 0.75rem;
+    background-color: var(--furia-dark-gray);
 }
 
 /* Message bubbles */
@@ -24,16 +56,17 @@
 
 .message-user {
     align-self: flex-end;
-    background-color: var(--bs-primary);
+    background-color: var(--furia-orange);
     color: white;
     border-bottom-right-radius: 0.25rem;
 }
 
 .message-bot {
     align-self: flex-start;
-    background-color: var(--bs-secondary);
+    background-color: var(--furia-light-gray);
     color: white;
     border-bottom-left-radius: 0.25rem;
+    border-left: 3px solid var(--furia-orange);
 }
 
 /* Timestamp */
@@ -51,16 +84,17 @@
     padding: 0.5rem 1rem;
     margin: 0.5rem;
     width: fit-content;
-    background-color: var(--bs-secondary);
+    background-color: var(--furia-light-gray);
     border-radius: 1rem;
     border-bottom-left-radius: 0.25rem;
+    border-left: 3px solid var(--furia-orange);
 }
 
 .typing-dot {
     width: 8px;
     height: 8px;
     margin: 0 2px;
-    background-color: rgba(255, 255, 255, 0.7);
+    background-color: var(--furia-orange);
     border-radius: 50%;
     animation: typingAnimation 1.4s infinite ease-in-out;
 }
@@ -89,11 +123,29 @@
 }
 
 .chat-container::-webkit-scrollbar-thumb {
-    background-color: rgba(255, 255, 255, 0.2);
+    background-color: var(--furia-orange);
+    opacity: 0.5;
     border-radius: 20px;
 }
 
 /* Message input focus */
 #message-input:focus {
-    box-shadow: 0 0 0 0.2rem rgba(var(--bs-primary-rgb), 0.25);
+    box-shadow: 0 0 0 0.2rem rgba(255, 85, 0, 0.25);
+    border-color: var(--furia-orange);
+}
+
+/* Card styling */
+.card {
+    border: 1px solid var(--furia-light-gray);
+    background-color: var(--furia-dark-gray);
+}
+
+.card-footer {
+    background-color: var(--furia-black);
+    border-top: none;
+}
+
+/* Adjust badge colors */
+.badge.bg-success {
+    background-color: var(--furia-orange) !important;
 }
