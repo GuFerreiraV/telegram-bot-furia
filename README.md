@@ -2,9 +2,8 @@
 
 [![Python Version](https://img.shields.io/badge/python-3.11%2B-blue)](https://www.python.org/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
-[![Telegram](https://img.shields.io/badge/Telegram-%40FURIA__Bot-blue)](https://t.me/FURIA_Bot)
 
-O bot definitivo para fãs da FURIA Esports! Obtenha informações em tempo real sobre o time de CS2, incluindo elenco, agenda de jogos, estatísticas e notícias exclusivas diretamente no Telegram.
+O bot simples para fãs da FURIA!
 
 ## Interface do Furia Bot
 <img src="https://github.com/user-attachments/assets/59f25804-d2ef-44d0-ad0d-33c27b546dbb" style="height: 500px; width:auto;"/>
