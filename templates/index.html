@@ -5,14 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>FURIA Bot - Interface de Chat</title>
     
-    <!-- Bootstrap CSS (Replit dark theme) -->
+  
     <link rel="stylesheet" href="https://cdn.replit.com/agent/bootstrap-agent-dark-theme.min.css">
     
     <!-- Font Awesome for icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     
     <!-- Custom CSS -->
-    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <link rel="stylesheet" href="../static/style.css">
 </head>
 <body>
     <div class="container">
@@ -24,6 +24,7 @@
                             <i class="fab fa-telegram-plane me-2"></i>
                             FURIA Bot
                         </h4>
+                        <!--Remover-->
                         <div>
                             <span id="connection-status" class="badge bg-success">
                                 <i class="fas fa-circle"></i> Conectado
@@ -72,10 +73,6 @@
                         <p class="card-text">
                             Esta é uma interface web para o FURIA Bot. As respostas do bot são processadas através desta interface para facilitar a interação.
                         </p>
-                        <p class="card-text small text-muted">
-                            <i class="fas fa-lightbulb me-1"></i>
-                            Experimente usar os comandos /start, /jogadores, /jogos, ou /noticias!
-                        </p>
                     </div>
                 </div>
             </div>
@@ -83,6 +80,6 @@
     </div>
 
     <!-- Custom JavaScript -->
-    <script src="{{ url_for('static', filename='js/chat.js') }}"></script>
+    <script src="../static/chat.js"></script>
 </body>
 </html>
